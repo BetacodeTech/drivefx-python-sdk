@@ -68,7 +68,7 @@ class Invoice:
                 "option": 1
             },
             "document": {
-                "docType": 1
+                "docType": 2
             },
             "products": [
                 p.to_dict() for p in self.products
