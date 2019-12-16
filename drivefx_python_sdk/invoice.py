@@ -32,8 +32,9 @@ class Product:
 
 
 class Costumer:
-    def __init__(self, name, email, tax_number, address, postal_code, city, country="PT",):
+    def __init__(self, number, name, email, tax_number, address, postal_code, city, country="PT"):
 
+        self.number = number
         self.name = name
         self.email = email
         self.tax_number = tax_number
@@ -44,6 +45,7 @@ class Costumer:
 
     def to_dict(self):
         costumer_dict = {
+            "number": self.number,
             "name": self.name,
             "address": self.address,
             "postalCode": self.postal_code,
